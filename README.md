@@ -21,10 +21,9 @@ A lightweight, offline, and private desktop application for managing tasks and e
 If you just want to use the application, grab the installer from our Releases page.
 
 1.  Go to the **[Releases](../../releases)** section of this repository.
-2.  Download the latest **`MyCalendarSetup.exe`**.
+2.  Download the latest **`SimpleKanbanCalendarSetup.exe`**.
 3.  Double-click the file to launch the Setup Wizard.
-4.  (Optional) Check the box to associate `.ics` files if you want this to be your default calendar app.
-5.  Launch the app from your Desktop or Start Menu!
+4.  Launch the app from your Desktop or Start Menu!
 
 ---
 
@@ -39,8 +38,8 @@ If you are a developer or want to compile the code yourself, follow these steps.
 #### Build Steps
 1.  **Clone the repository:**
     ```bash
-    git clone [https://github.com/YOUR_USERNAME/gocalendar.git](https://github.com/YOUR_USERNAME/gocalendar.git)
-    cd gocalendar
+    git clone [https://github.com/mickey-doyle/SimpleKanbanCalendar.git](https://github.com/mickey-doyle/SimpleKanbanCalendar.git)
+    cd SimpleKanbanCalendar
     ```
 
 2.  **Install dependencies:**
@@ -55,23 +54,23 @@ If you are a developer or want to compile the code yourself, follow these steps.
 
 4.  **Build for Windows (No Console Window):**
     ```bash
-    go build -ldflags -H=windowsgui -o GoCalendar.exe
+    go build -ldflags -H=windowsgui -o SimpleKanbanCalendar.exe
     ```
 
 5.  **Package with Icon:**
     If you have the Fyne command line tool installed:
     ```bash
-    fyne package -os windows -icon Icon.png --name "My Calendar App"
+    fyne package -os windows -icon Icon.png --name "Simple Kanban Calendar"
     ```
 
 ---
 
 ## 🛠️ Creating the Installer
-If you have modified the code and want to generate a new `MyCalendarSetup.exe` installer:
+If you have modified the code and want to generate a new `SimpleKanbanCalendar.exe` installer:
 
 1.  Ensure you have **Inno Setup Compiler** installed.
 2.  Run the `fyne package` command (step 5 above) to generate the executable.
-3.  Open `setup_script.iss` in Inno Setup.
+3.  Open `Installer Script.iss` in Inno Setup.
 4.  Click **Build > Compile**.
 5.  The new installer will be generated in the project folder.
 
