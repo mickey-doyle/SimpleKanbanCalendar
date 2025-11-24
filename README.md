@@ -38,7 +38,7 @@ If you are a developer or want to compile the code yourself, follow these steps.
 #### Build Steps
 1.  **Clone the repository:**
     ```bash
-    git clone [https://github.com/mickey-doyle/SimpleKanbanCalendar.git](https://github.com/mickey-doyle/SimpleKanbanCalendar.git)
+    git clone https://github.com/mickey-doyle/SimpleKanbanCalendar.git
     cd SimpleKanbanCalendar
     ```
 
