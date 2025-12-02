@@ -12,9 +12,9 @@ Dual Views: Change between a monthly calendar view, a Kanban board, or other vie
 - Data Privacy: Data is stored entirely on your computer in JSON files (todo_data.json and groups.json). Cloud is not required.
 - Import/Export: Import/export files in the .ics (iCalendar) format to connect with Google or Apple Calendar.
 - Themes: Implements Dark Mode Support, Light Mode Support.
---
+
 # How to Install (Windows Only)
----
+
 ### Option 1: Installation Wizard
 If you simply wish to use the application, download the installer from the Releases page.
 
@@ -25,7 +25,9 @@ If you simply wish to use the application, download the installer from the Relea
 3. Open the file that will run the Setup Wizard.
 
 4. Click on the application from your desktop or start menu.
+
 ---
+
 ### Option 2: Build from Source
 
 If you’re a developer or want to compile it yourself, follow these steps.
@@ -37,26 +39,27 @@ If you’re a developer or want to compile it yourself, follow these steps.
 - 
 #### Build Steps
 1. Clone the repo:
-
-`git clone https://github.com`
-`cd SimpleKanbanCalendar`
-
+```
+git clone https://github.com/mickey-doyle/SimpleKanbanCalendar.git
+cd SimpleKanbanCalendar
+```
 2. Install dependencies:
-
-`go mod tidy`
-
+```
+go mod tidy
+```
 3. Running in Developer Mode:
-
-`go run main.go`
-
+```
+go run main.go
+```
 4. Build for Windows (no console window):
-   
-`go build -ldflags -H=windowsgui -o SimpleKanbanCalendar.exe`
+```  
+go build -ldflags -H=windowsgui -o SimpleKanbanCalendar.exe
+```
+5. Package with icon (if you have the Fyne CLI):
+``` 
+fyne package -os windows -icon Icon.png --name "Simple Kanban Calendar"
+```
 
-6. Package with icon (if you have the Fyne CLI):
-7. 
-`fyne package -os windows -icon Icon.png --name "Simple Kanban Calendar"`
----
 ## Creating the Installer 
 
 If you have modified the code and want to generate a new `SimpleKanbanCalendar.exe` installer:
