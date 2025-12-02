@@ -8,15 +8,12 @@ Dual Views: Change between a monthly calendar view, a Kanban board, or other vie
 - Task & Event Management: To-do’s or events marked with time blocking.
 - Recurring Items: Allow entries to repeat on a daily, weekly, monthly, or user-specified basis.
 - Project Management: Use color-coded columns for task grouping.
-Smart Sorting: Sorting Kanban columns based on Date, Alphabetical, or Status.
+- Smart Sorting: Sorting Kanban columns based on Date, Alphabetical, or Status.
 - Data Privacy: Data is stored entirely on your computer in JSON files (todo_data.json and groups.json). Cloud is not required.
 - Import/Export: Import/export files in the .ics (iCalendar) format to connect with Google or Apple Calendar.
-
 - Themes: Implements Dark Mode Support, Light Mode Support.
-
-<div
-
-## How to Install (Windows Only)
+--
+# How to Install (Windows Only)
 ---
 ### Option 1: Installation Wizard
 If you simply wish to use the application, download the installer from the Releases page.
@@ -59,9 +56,7 @@ If you’re a developer or want to compile it yourself, follow these steps.
 6. Package with icon (if you have the Fyne CLI):
 7. 
 `fyne package -os windows -icon Icon.png --name "Simple Kanban Calendar"`
-
 ---
-
 ## Creating the Installer 
 
 If you have modified the code and want to generate a new `SimpleKanbanCalendar.exe` installer:
