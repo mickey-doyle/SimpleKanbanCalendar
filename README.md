@@ -66,6 +66,6 @@ If you have modified the code and want to generate a new `SimpleKanbanCalendar.e
 
 1.  Ensure you have **Inno Setup Compiler** installed.
 2.  Run the `fyne package` command (step 5 above) to generate the executable.
-3.  Open `Installer Script.iss` in Inno Setup.
+3.  Open `InstallerScript.iss` in Inno Setup.
 4.  Click **Build > Compile**.
 5.  The new installer will be generated in the project folder.
