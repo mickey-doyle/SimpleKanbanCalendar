@@ -13,7 +13,7 @@ Dual Views: Change between a monthly calendar view, a Kanban board, or other vie
 - Import/Export: Import/export files in the .ics (iCalendar) format to connect with Google or Apple Calendar.
 - Themes: Implements Dark Mode Support, Light Mode Support.
 
-# How to Install (Windows Only)
+## How to Install (Windows Only)
 
 ### Option 1: Installation Wizard
 If you simply wish to use the application, download the installer from the Releases page.
@@ -36,7 +36,7 @@ If you’re a developer or want to compile it yourself, follow these steps.
 - Go (Golang) 1.20 or higher
 - GCC Compiler (Required for graphics rendering with the Fyne library) e.g. TDM-GCC or MinGW for Windows
 - Fyne Toolkit: `go install fyne.io/fyne`
-- 
+
 #### Build Steps
 1. Clone the repo:
 ```
